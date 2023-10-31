@@ -1,0 +1,48 @@
+<script>
+  function buttonChanges(){
+    var selectedOS = document.querySelector('input[name = "OS" ]:checked').value;
+  }
+  </script>
+
+<h2> Pick The Best PC That Fits Your Needs</h2>
+
+<div class="question-box">
+  <div class="question">1. In which team are you? *</div>
+  <div class="radio-button-group" >
+
+    <input type="radio" value="windows" id="windows" name="OS" class="hidden-radio" onchange="buttonChanges('windows')"/>
+    <label for="windows" class="radio-button"><image src="icons/question1/windows.svg" class="buttons-icon" >Windows</label>
+    
+    <input type="radio" value="mac" id="mac" name="OS" class="hidden-radio" onchange="buttonChanges('mac')"/>
+    <label for="mac" class="radio-button"><image src="icons/question1/mac.svg" class="buttons-icon"></image>MacOS</label>
+  
+  </div>
+</div>
+
+
+
+<br />
+<div class="question-box">
+  <div class="question">2. What's Your Workspace Style? *</div>
+  <div class="radio-button-group">
+    <input type="radio" value="fixed" id="fixed" name="ENV" class="hidden-radio" />
+    <label for="fixed" class="radio-button"><image src="icons/question2/Computer.svg" class="buttons-icon">On desk</label>
+    <input type="radio" value="flixible" id="flixible" name="ENV" class="hidden-radio" />
+    <label for="flixible" class="radio-button"
+      ><image src="icons/question2/laptop.svg" class="buttons-icon"> Moving</label
+    >
+  </div>
+</div>
+<br />
+<div class="question-box">
+  <div class="question">3. How's Your Workload Looking? *</div>
+  <div class="radio-button-group">
+    <input type="radio" value="light" id="light" name="workload" class="hidden-radio" />
+    <label for="light" class="radio-button"><image src="icons/question3/light.svg" class="buttons-icon"></image>Light</label>
+    <input type="radio" value="heavy" id="heavy" name="workload" class="hidden-radio" />
+    <label for="heavy" class="radio-button"><image src="icons/question3/heavy.svg" class="buttons-icon">Heavy</label>
+  </div>
+</div>
+<br>
+
+

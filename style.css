@@ -1,0 +1,295 @@
+/*
+#F0DFFF
+#E4C5FF
+#A542FD
+#BD75FD
+#6712B1
+#22013F
+
+*/
+
+.radio-div {
+  width: auto;
+}
+body {
+  font-family: "Montserrat";
+  font-size: 2.5vw;
+  background-color: #f0dfff;
+  /* text-wrap: wrap; */
+  /* stroke: black; */
+  margin: 4% 16% 0 13%;
+}
+
+.colors {
+  color: #f0dfff; /*fields buttons*/
+  color: #e4c5ff; /*questions*/
+  color: #a542fd; /*selected*/
+  color: #bd75fd; /*stage*/
+  color: #6712b1; /* fields texts */
+  color: #22013f; /* background*/
+  /*box-shadow: 1px 2px #22013F;*/
+  /*box-shadow: 1px 2px #bd75fd;*/
+}
+h2 {
+  color: #bd75fd;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    font-weight: 800;
+    font-size: 3.5vw;
+}
+.tab {
+  color: #f9f0e6;
+}
+.box {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  padding: 5%;
+  /* margin: 1%; */
+  text-align: left;
+  background-color: #22013f;
+}
+.center {
+  text-align: center;
+}
+
+.question {
+  color: #e4c5ff;
+    margin: 2% 0 5% 0;
+    padding: 2%;
+    font-weight: bold;
+    font-size: 2vw;
+}
+.question-box {
+  margin-top: auto;
+}
+/*------------------------------------------
+/* Hide the default radio inputs */
+.hidden-radio {
+  display: none;
+}
+
+.buttons-icon {
+  max-width: 4vw;
+  height: auto;
+  vertical-align: middle;
+  margin-right: 10px;
+  filter: invert(80%) sepia(46%) saturate(303%) hue-rotate(206deg) brightness(101%) contrast(108%)
+}
+
+/* Style the labels as buttons */
+.radio-button {
+  padding: 5%;
+  background-color: #22013f;
+  color: #f0dfff;
+  border: 0.2vw solid #f0dfff;
+  border-radius: 1vw;
+  cursor: pointer;
+  user-select: none;
+  text-align: left;
+  margin-right: 1%;
+  width: 50%;
+  font-size: 1.5vw;
+  font-weight: bold
+
+}
+
+/* Change the button's background color when a radio is selected */
+.hidden-radio:checked + .radio-button {
+  background-color: #a542fd;
+  border: 1px solid #a542fd;
+}
+.radio-button-group {
+  margin: 5% 0 3% 5%;
+  width: 80%;
+  text-wrap: wrap;
+
+}
+
+/*-----------------------------------------------------*/
+.dropdown {
+  margin: 20px 20px;
+}
+.dropdown-button {
+  background-color: #f0dfff;
+    color: #6712b1;
+    border: none;
+    border-radius: 12px;
+    padding: 2% 6% 2% 7%;
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+}
+.dropdown-button {
+  text-align: left;
+    font-size: 1.7vw;
+    font-weight: bold
+}
+/* Style the dropdown content */
+.dropdown-content {
+  display: none;
+  position: relative;
+  background-color: #f0dfff;
+  box-shadow: 0 4px 8px 0;
+  min-width: 90%;
+  padding: 1%;
+  border-radius: 10px;
+  margin-top: 0.5%
+}
+
+/* Show the dropdown content when the dropdown button is hovered or focused */
+.dropdown:active .dropdown-content {
+  display: block;
+}
+.dropdown-button:active .arrow-icon{
+  -webkit-transform: scaleX(-1);
+transform: scaleX(-1);
+}
+
+/* Style the grid container for checkboxes */
+.grid-container {
+  display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 1vw;
+    grid-gap: 1vw;
+}
+
+/* Style the checkboxes and labels as buttons */
+.hidden-checkbox {
+  display: none;
+}
+
+.checkbox-button {
+ /* padding: 20px; */
+  background-color: #f0dfff;
+  color: #22013f;
+  border: 0.2vw solid #22013f;
+  border-radius: 1.1vw;
+  cursor: pointer;
+  user-select: none;
+  text-align: center;
+  padding: 1%;
+  display: flex;
+  flex-direction: column;
+  /* box-shadow: 2px 5px #22013f; */
+  /* font-weight: bold; */
+  width: 8vw;
+}
+
+.software-icon {
+  max-width: 7vw;
+  height: 100%;
+  align-self: center;
+  filter: brightness(0) saturate(100%) invert(19%) sepia(86%) saturate(7464%) hue-rotate(279deg) brightness(31%) contrast(121%);
+  padding-top: 0.2vw;
+}
+
+.hidden-checkbox:checked + .checkbox-button .software-icon {
+  filter: brightness(0) saturate(100%) invert(84%) sepia(3%) saturate(2525%) hue-rotate(214deg) brightness(106%) contrast(103%);
+}
+
+/* Change the button's background color when the checkbox is checked */
+.hidden-checkbox:checked + .checkbox-button {
+  background-color: #bd75fd;
+  border: 0.2vw solid #bd75fd;
+  color: #f0dfff;
+}
+.checkbox-label {
+  text-align: center;
+  border: solid #22013f;
+  border-radius: 10px;
+}
+
+.mac-choice {
+  display: none;
+}
+
+/*------------------------------------------------------------------------------------*/
+.arrow-icon {
+  width: 3%;
+    height: 50%;
+    padding: 3px;
+    float: inline-end;
+    filter: invert(22%) sepia(30%) saturate(5216%) hue-rotate(259deg) brightness(86%) contrast(125%);
+}
+
+.soft-name{
+  margin: 1vw 0 0 0;
+  font-size: 1.5vw;
+  font-weight: bold;
+  text-wrap: wrap;
+  word-wrap: break-word;
+  text-shadow: 0px 0 #22013f;
+
+}
+/*----------------------------------------------------------------------------------*/
+.submit-button{
+  margin-top: 2.5vw;
+  padding: 2vw;
+  width: 15vw;
+  height: auto;
+  background-color: #22013f;
+  border: 0.2vw solid #f0dfff;
+  border-radius: 1vw;
+  color: #f0dfff;
+  font-size: 1.5vw;
+  cursor: pointer;
+}
+.submit-button:disabled{
+  margin-top: 2.5vw;
+  padding: 2vw;
+  width: 15vw;
+  height: auto;
+  background-color: #22013f;
+  opacity: 0.4;
+  border: 0.2vw solid #f0dfff;
+  border-radius: 1vw;
+  color: #f0dfff;
+  font-size: 1.5vw;
+  cursor: default;
+  
+}
+
+.dropdown.checked .dropdown-button{
+  background-color: #bd75fd;
+  color:#ffff;
+  /* transform: rotate(180deg); */
+}
+.dropdown.checked .arrow-icon{
+  filter: brightness(0) saturate(100%) invert(84%) sepia(3%) saturate(2525%) hue-rotate(214deg) brightness(106%) contrast(103%);
+}
+
+
+.submit-button:active { 
+  background-color: #bd75fd;
+}
+.submit-button:active:disabled{
+  background-color: #22013f;
+}
+
+/* Results text style */
+
+.result-head{
+  color: #bd75fd;
+  font-weight: bold;
+  font-size: 2vw;
+}
+.result{
+  color: #f0dfff;
+  font-weight: 500;
+  font-size: 1.5vw;
+}
+.result-box{
+  margin-top: 5vw;
+}
+
+#mac-choice{
+  display: none;
+}
+
+.arrow-icon.rotate180{
+  transform: rotate(180deg);
+  transition: 0.5s;
+}
+
