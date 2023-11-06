@@ -1,48 +1,65 @@
-<script>
-  function buttonChanges(){
-    var selectedOS = document.querySelector('input[name = "OS" ]:checked').value;
-  }
-  </script>
-
-<h2> Pick The Best PC That Fits Your Needs</h2>
-
-<div class="question-box">
-  <div class="question">1. In which team are you? *</div>
-  <div class="radio-button-group" >
-
-    <input type="radio" value="windows" id="windows" name="OS" class="hidden-radio" onchange="buttonChanges('windows')"/>
-    <label for="windows" class="radio-button"><image src="icons/question1/windows.svg" class="buttons-icon" >Windows</label>
-    
-    <input type="radio" value="mac" id="mac" name="OS" class="hidden-radio" onchange="buttonChanges('mac')"/>
-    <label for="mac" class="radio-button"><image src="icons/question1/mac.svg" class="buttons-icon"></image>MacOS</label>
-  
-  </div>
+<div class="row-md-12">
+  <div class="title fs-1 mb-3 fw-bold text-md-start text-center"> Pick The Best PC That Fits Your Needs</div>
 </div>
 
 
 
-<br />
-<div class="question-box">
-  <div class="question">2. What's Your Workspace Style? *</div>
-  <div class="radio-button-group">
-    <input type="radio" value="fixed" id="fixed" name="ENV" class="hidden-radio" />
-    <label for="fixed" class="radio-button"><image src="icons/question2/Computer.svg" class="buttons-icon">On desk</label>
-    <input type="radio" value="flixible" id="flixible" name="ENV" class="hidden-radio" />
-    <label for="flixible" class="radio-button"
-      ><image src="icons/question2/laptop.svg" class="buttons-icon"> Moving</label
-    >
-  </div>
-</div>
-<br />
-<div class="question-box">
-  <div class="question">3. How's Your Workload Looking? *</div>
-  <div class="radio-button-group">
-    <input type="radio" value="light" id="light" name="workload" class="hidden-radio" />
-    <label for="light" class="radio-button"><image src="icons/question3/light.svg" class="buttons-icon"></image>Light</label>
-    <input type="radio" value="heavy" id="heavy" name="workload" class="hidden-radio" />
-    <label for="heavy" class="radio-button"><image src="icons/question3/heavy.svg" class="buttons-icon">Heavy</label>
-  </div>
-</div>
-<br>
+<div class="row-md-6 py-4 pb-3">
+  <div class="question fs-4 my-4 fw-semibold">1. In which team are you? *</div>
+
+  <div class="d-flex justify-content-start w-50 align-items-center">
+
+      <input type="radio" class="btn-check" id="windows" name="OS" value="windows" onchange="buttonChanges('windows')"
+        autocomplete="off">
+      <label class="d-flex btn btn-sm-sm btn-outline-primary w-100 fw-bold rounded-4 align-items-center justify-content-lg-between justify-content-around px-5 py-3 me-1 rb-zeplin-selected" for="windows">
+        
+          <image src="icons/question1/windows.svg" class="buttons-icon"></image>
+        
+        Windows   
+        
+      </label>
 
 
+      <input type="radio" class="btn-check" id="mac" name="OS" value="mac" onchange="buttonChanges('mac')"
+        autocomplete="off">
+      <label class="d-flex btn btn-sm-sm btn-outline-primary w-100 fw-bold rounded-4 align-items-center justify-content-lg-between justify-content-around px-5 py-3 me-1 rb-zeplin-selected" for="mac">
+        <image src="icons/question1/mac.svg" class="buttons-icon"></image>MacOS
+      </label>
+    </div>
+
+</div>
+
+<div class="row-md-6 py-4 pb-3">
+  <div class="question fs-4 my-4 fw-semibold">2. What's Your Workspace Style? *</div>
+
+<div class="d-flex justify-content-start w-50 align-items-center">
+
+    <input type="radio" class="btn-check" id="fixed" name="ENV" value="fixed" autocomplete="off">
+    <label class="d-flex btn btn-sm-sm btn-outline-primary w-100 fw-bold rounded-4 align-items-center justify-content-lg-between justify-content-around px-5 py-3 me-1 rb-zeplin-selected" for="fixed">
+      <image src="icons/question2/Computer.svg" class="buttons-icon">Fixed
+    </label>
+
+
+    <input type="radio" class="btn-check" id="flixible" name="ENV" value="flixible" autocomplete="off">
+    <label class="d-flex btn btn-sm-sm btn-outline-primary w-100 fw-bold rounded-4 align-items-center justify-content-lg-between justify-content-around px-5 py-3 me-1 rb-zeplin-selected" for="flixible">
+      <image src="icons/question2/laptop.svg" class="buttons-icon">Moving
+    </label>
+</div>
+</div>
+<div class="row-md-6 py-4 pb-3">
+  <div class="question fs-4 my-4 fw-semibold">3. How's Your Workload Looking? *</div>
+
+<div class="d-flex justify-content-start w-50 align-items-center">
+
+    <input type="radio" class="btn-check" id="light" name="workload" value="light" autocomplete="off">
+    <label class="d-flex btn btn-sm-sm btn-outline-primary w-100 fw-bold rounded-4 align-items-center justify-content-lg-between justify-content-around px-5 py-3 me-1 rb-zeplin-selected" for="light">
+      <image src="icons/question3/light.svg" class="buttons-icon"></image>Light
+    </label>
+
+
+    <input type="radio" class="btn-check" id="heavy" name="workload" value="heavy" autocomplete="off">
+    <label class="d-flex btn btn-sm-sm btn-outline-primary w-100 fw-bold rounded-4 align-items-center justify-content-lg-between justify-content-around px-5 py-3 me-1 rb-zeplin-selected" for="heavy">
+      <image src="icons/question3/heavy.svg" class="buttons-icon"></image>Heavy
+    </label>
+</div>
+</div>

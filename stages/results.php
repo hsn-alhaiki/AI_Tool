@@ -7,15 +7,15 @@ $render_html = false;
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['answers'])) {
     $result_specs = [];
             $recieved_answers = $_POST['answers'];
-            $processedAnswers = json_decode($recieved_answers, true);
-            //var_dump($recieved_answers);
+            $decodedAnswers = json_decode($recieved_answers, true);
+            // var_dump($decodedAnswers);
 
            
-            if(!empty($processedAnswers))
+            if(!empty($decodedAnswers))
            {
             foreach ($softwareRecSpecs as $sft) {
                 $softwareName = $sft->getName();
-                foreach ($processedAnswers[3] as $aSoft) {
+                foreach ($decodedAnswers[3] as $aSoft) {
                     if ($softwareName == $aSoft) {
                         checkSpecs($sft);
                     }
@@ -23,16 +23,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['answers'])) {
                 if($sft === end($softwareRecSpecs))
                 {
                     $render_html =  true;
+                    checkWorkload($decodedAnswers);
                 }
             }
            }
            
 }
+
+
 function checkSpecs($sn)
     {
-        global $result_specs, $parts, $processedAnswers;
+        global $result_specs, $parts, $decodedAnswers;
         if (empty($result_specs)) {
-            $result_specs['os']= $processedAnswers[0][0];
+            $result_specs['os']= $decodedAnswers[0][0];
             $result_specs['cpu'] = $sn->getCpu();
             $result_specs['ram'] = $sn->getRam();
             $result_specs['storage'] = $sn->getStorage();
@@ -60,6 +63,36 @@ function checkSpecs($sn)
             }
         }
     }
+    function checkWorkload($answers){
+        
+        global $parts, $result_specs;
+        if($answers[2][0] === 'heavy'){
+        //foreach($parts as $key => $part){
+            foreach($parts['cpu'] as $key => $cpu){
+           if($cpu['rank'] === $parts['cpu'][$result_specs['cpu']]['rank']-1){
+               $result_specs['cpu'] = $key;
+            }
+        }
+        foreach($parts['storage'] as $key => $storage){
+            if($storage['rank'] === $parts['storage'][$result_specs['storage']['Size']]['rank']-1){
+                $result_specs['storage']['Size'] = $key;
+            }    
+        }
+        foreach($parts['gpu'] as $key => $gpu){
+            if($gpu['rank'] === $parts['gpu'][$result_specs['gpu']]['rank']-1){
+                $result_specs['gpu'] = $key;
+            }
+     }
+
+
+       
+       if($result_specs['ram'] < 64)
+       {
+            $result_specs['ram'] *= 2;
+       }
+    }
+}
+    //}
 
 
     if($render_html === true){
@@ -78,10 +111,3 @@ function checkSpecs($sn)
         </ul>
     </div>";
     }
-
-            ?>
-
-            
-        
-    
-    

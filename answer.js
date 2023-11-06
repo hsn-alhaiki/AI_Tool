@@ -4,28 +4,6 @@ const stagesForm = document.getElementById('stages-form');
 const hiddenInput = document.getElementById('hidden-result-input');
 
 
-function toggleDropdown(category) {
-    
-    // var dropdownContent = document.getElementById("dropdownContent"+category);
-    var dropdownContent = $("#dropdownContent"+category);
-    console.log(dropdownContent.css("display")        );
-    if(dropdownContent.css("display") === "block"){
-        dropdownContent.css("display","none")
-        dropdownContent.parent().find(".arrow-icon").removeClass('rotate180')
-        //dropdownContent.pare('.arrow-icon').classList.remove('rotate180');
-        // $("#dropdownContent"+category).parent().find(".arrow-icon").removeClass('rotate180')
-    }
-    else {
-        dropdownContent.css("display","block")
-        dropdownContent.parent().find(".arrow-icon").addClass('rotate180')
-        // $("#dropdownContent"+category).parent().find(".arrow-icon").addClass('rotate180')
-
-    }
-    
-  }
-
-
-  
 
   const submitButton = document.getElementById('submit');
   
@@ -150,7 +128,7 @@ function pageLoad(){
 
     
         $('.dropdown').each(function () {
-            var box = $(this).children().find(".grid-container")
+            var box = $(this).children().find(".grid-container > div")
             if(box.children().filter('input[type="checkbox"]').length === 0){
                 
                 $(this).css("display","none")
@@ -159,6 +137,16 @@ function pageLoad(){
                 $(this).css("display","block")
             }
 
+        })
+
+        $('.dropdown-button').click(function(){
+            if(!$(this).hasClass('collapsed')){
+                $(this).addClass('rotate180');
+                // $(this).children().find('img.arrow-icon').addClass('rotate180');
+            }else{
+                
+                $(this).removeClass('rotate180');
+            }
         })
       
 }
@@ -174,73 +162,15 @@ function submitAnswers(encodedAnswers){
                 data: {'answers': JSON.stringify(encodedAnswers)},
                 success:function(response){
                     $('.result-box').html(response);
-                    //alert(response)
+                    
+                    document.getElementById('result-box').scrollIntoView({behavior: 'smooth'});
                 },
                 error:function(response){
-                    //alert(response)
+                    
                 }
             })
 
-            document.getElementById('result-box').scrollIntoView({behavior: 'smooth'});
+            
         
 }
-
-
-
-
-
-
-
-
-// $('input[name="OS"]').on('change', function(){
-//     console.log('checked value = ', $(this).val());
-//     if($(this).val() == 'windows'){
-//         // document.getElementById('win-choice').style.display = "block"
-//         // document.getElementById('mac-choice').style.display = "none"
-//         //$('#mac-choice input:checkbox').prop('checked', false);
-//         document.querySelectorAll('.hidden-checkbox').forEach(function(checkbox){
-//             checkbox.closest('.dropdown').classList.remove('checked');
-//         })
-
-//     }else{
-//         // document.getElementById('win-choice').style.display = "none";
-//         // document.getElementById('mac-choice').style.display = "block";
-//         //$('#win-choice input:checkbox').prop('checked', false);
-//         document.querySelectorAll('.hidden-checkbox').forEach(function(checkbox){
-//             checkbox.closest('.dropdown').classList.remove('checked');
-//         })        
-//     }
-// })
-
-
-
-
-//$(".dropdown").find(".grid-container:empty").hide();
-/*
-var buttons = document.querySelectorAll('.dropdown-button');
-
-// Add an event listener to each button
-buttons.forEach(function (button) {
-    button.addEventListener('click', function () {
-        // Toggle the 'active' class on the button
-        button.classList.toggle('active');
-    });
-});*/
-/*
-function getSelectedOS(value) {
-    // Get the selected OS value
-    var selectedOS = value;
-
-    // Use AJAX to send the value to a PHP script
-    var xhr = new XMLHttpRequest();
-    xhr.open('POST', 'stages/stage-2.php', true);
-    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-    xhr.onreadystatechange = function() {
-      if (xhr.readyState === 4 && xhr.status === 200) {
-        // Handle the response from the PHP script (if needed)
-        //console.log(xhr.responseText);
-      }
-    };
-    xhr.send(selectedOS);
-  }*/
 
