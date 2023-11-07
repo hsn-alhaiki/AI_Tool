@@ -35,11 +35,11 @@ $softwareRecSpecs = array(
     
     new SoftwareSpecs( "Krita", "design",array('windows', 'mac', 'linux'), "i5", "8", "4GB", array("Size" => "256GB", "Type" => "SSD"), array("Resolution" => "1920x1080", "Tech" => "IPS")),
     
-    new SoftwareSpecs( "Inkscape", "design",array('windows', 'mac', 'linux'), "i3", "4", "N/A", array("Size" => "256GB", "Type" => "HDD"), array("Resolution" => "1920x1080", "Tech" => "IPS")),
+    new SoftwareSpecs( "Inkscape", "design",array('windows', 'mac', 'linux'), "i3", "4", "Any", array("Size" => "256GB", "Type" => "HDD"), array("Resolution" => "1920x1080", "Tech" => "IPS")),
     
     new SoftwareSpecs( "GIMP", "design",array('windows', 'mac', 'linux'), "i3", "2", "4GB", array("Size" => "256GB", "Type" => "HDD"), array("Resolution" => "1920x1080", "Tech" => "IPS")),
     
-    new SoftwareSpecs( "2D Games","game", array('windows'), "i5", "4", "4GB", array("Size" => "512GB", "Type" => "SSD"), array("Resolution" => "1920x1080", "Tech" => "N/A")),
+    new SoftwareSpecs( "2D Games","game", array('windows'), "i5", "4", "4GB", array("Size" => "512GB", "Type" => "SSD"), array("Resolution" => "1920x1080", "Tech" => "Any")),
     
     new SoftwareSpecs( "3D Cartoon Games","game", array('windows'), "i5", "8", "8GB", array("Size" => "1TB", "Type" => "SSD"), array("Resolution" => "1920x1080", "Tech" => "IPS")),
     
@@ -47,27 +47,27 @@ $softwareRecSpecs = array(
     
     new SoftwareSpecs( "Shooting Games", "game",array('windows'), "i5", "16", "4GB", array("Size" => "512GB", "Type" => "SSD"), array("Resolution" => "1920x1080", "Tech" => "IPS")),
     //--------------------
-    new SoftwareSpecs("Microsoft 365","ot", array('windows'), "i3", "4", "N/A", array("Size" => "256GB", "Type" => "SSD"), array("Resolution" => "1280x720", "Tech" => "N/A")),
+    new SoftwareSpecs("Microsoft 365","ot", array('windows'), "i3", "4", "Any", array("Size" => "256GB", "Type" => "SSD"), array("Resolution" => "1280x720", "Tech" => "Any")),
     
-    new SoftwareSpecs("Browsing","ot", array('windows','mac','linux'), "i3", "4", "N/A", array("Size" => "256GB", "Type" => "SSD"), array("Resolution" => "1280x720", "Tech" => "N/A")),
+    new SoftwareSpecs("Browsing","ot", array('windows','mac','linux'), "i3", "4", "Any", array("Size" => "256GB", "Type" => "SSD"), array("Resolution" => "1280x720", "Tech" => "Any")),
     
-    new SoftwareSpecs( "VS Code","dev", array('windows', 'mac', 'linux'), "i3", "2", "N/A", array("Size" => "256GB", "Type" => "SSD"), array("Resolution" => "1280x720", "Tech" => "N/A")),
+    new SoftwareSpecs( "VS Code","dev", array('windows', 'mac', 'linux'), "i3", "2", "Any", array("Size" => "256GB", "Type" => "SSD"), array("Resolution" => "1280x720", "Tech" => "Any")),
     
-    new SoftwareSpecs( "Visual Studio","dev", array('windows', 'mac'), "i5", "16", "N/A", array("Size" => "512GB", "Type" => "SSD"), array("Resolution" => "1920x1080", "Tech" => "N/A")),
+    new SoftwareSpecs( "Visual Studio","dev", array('windows', 'mac'), "i5", "16", "Any", array("Size" => "512GB", "Type" => "SSD"), array("Resolution" => "1920x1080", "Tech" => "Any")),
     
-    new SoftwareSpecs( "IntelliJ", "dev",array('windows', 'mac', 'linux'), "i5", "8", "N/A", array("Size" => "256GB", "Type" => "SSD"), array("Resolution" => "1920x1080", "Tech" => "N/A")),
+    new SoftwareSpecs( "IntelliJ", "dev",array('windows', 'mac', 'linux'), "i5", "8", "Any", array("Size" => "256GB", "Type" => "SSD"), array("Resolution" => "1920x1080", "Tech" => "Any")),
     
-    new SoftwareSpecs( "PyCharm","dev", array('windows', 'mac', 'linux'), "i5", "8", "4GB", array("Size" => "256GB", "Type" => "SSD"), array("Resolution" => "1920x1080", "Tech" => "N/A")),
+    new SoftwareSpecs( "PyCharm","dev", array('windows', 'mac', 'linux'), "i5", "8", "4GB", array("Size" => "256GB", "Type" => "SSD"), array("Resolution" => "1920x1080", "Tech" => "Any")),
     
-    new SoftwareSpecs( "Eclipse","dev", array('windows', 'mac', 'linux'), "i5", "16", "N/A", array("Size" => "512GB", "Type" => "SSD"), array("Resolution" => "1280x720", "Tech" => "N/A")),
+    new SoftwareSpecs( "Eclipse","dev", array('windows', 'mac', 'linux'), "i5", "16", "Any", array("Size" => "512GB", "Type" => "SSD"), array("Resolution" => "1280x720", "Tech" => "Any")),
     
-    new SoftwareSpecs( "Arduino","dev", array('windows', 'mac', 'linux'), "i3", "4", "N/A", array("Size" => "256GB", "Type" => "SSD"), array("Resolution" => "1280x720", "Tech" => "N/A")),
+    new SoftwareSpecs( "Arduino","dev", array('windows', 'mac', 'linux'), "i3", "4", "Any", array("Size" => "256GB", "Type" => "SSD"), array("Resolution" => "1280x720", "Tech" => "Any")),
     
-    new SoftwareSpecs( "Xcode","dev", array('mac'), "N/A", "16", "N/A", array("Size" => "512GB", "Type" => "SSD"), array("Resolution" => "1920x1080", "Tech" => "N/A")),
+    new SoftwareSpecs( "Xcode","dev", array('mac'), "Any", "16", "Any", array("Size" => "512GB", "Type" => "SSD"), array("Resolution" => "1920x1080", "Tech" => "Any")),
     
-    new SoftwareSpecs( "XAMPP","dev", array('windows', 'mac', 'linux'), "i3", "4", "N/A", array("Size" => "256GB", "Type" => "SSD"), array("Resolution" => "1280x720", "Tech" => "N/A")),
+    new SoftwareSpecs( "XAMPP","dev", array('windows', 'mac', 'linux'), "i3", "4", "Any", array("Size" => "256GB", "Type" => "SSD"), array("Resolution" => "1280x720", "Tech" => "Any")),
     
-    new SoftwareSpecs( "Docker", "dev",array('windows', 'mac', 'linux'), "i3", "4", "N/A", array("Size" => "256GB", "Type" => "SSD"), array("Resolution" => "1920x1080", "Tech" => "N/A")),
+    new SoftwareSpecs( "Docker", "dev",array('windows', 'mac', 'linux'), "i3", "4", "Any", array("Size" => "256GB", "Type" => "SSD"), array("Resolution" => "1920x1080", "Tech" => "Any")),
     
     new SoftwareSpecs( "Godot", "dev",array('windows', 'mac', 'linux'), "i5", "4", "4GB", array("Size" => "512GB", "Type" => "SSD"), array("Resolution" => "1920x1080", "Tech" => "IPS")),
     
@@ -77,25 +77,25 @@ $softwareRecSpecs = array(
     
     new SoftwareSpecs( "Dreamweaver","dev", array('windows', 'mac'), "i5", "4", "4GB", array("Size" => "512GB", "Type" => "SSD"), array("Resolution" => "1920x1080", "Tech" => "IPS")),
     
-    new SoftwareSpecs( "VMware", "dev",array('windows', 'mac', 'linux'), "i7", "8", "4GB", array("Size" => "512GB", "Type" => "SSD"), array("Resolution" => "1920x1080", "Tech" => "N/A")),
+    new SoftwareSpecs( "VMware", "dev",array('windows', 'mac', 'linux'), "i7", "8", "4GB", array("Size" => "512GB", "Type" => "SSD"), array("Resolution" => "1920x1080", "Tech" => "Any")),
     
-    new SoftwareSpecs( "Power BI", "dev",array('windows', 'mac'), "i5", "4", "4GB", array("Size" => "512GB", "Type" => "SSD"), array("Resolution" => "1280x720", "Tech" => "N/A")),
+    new SoftwareSpecs( "Power BI", "dev",array('windows', 'mac'), "i5", "4", "4GB", array("Size" => "512GB", "Type" => "SSD"), array("Resolution" => "1280x720", "Tech" => "Any")),
     
-    new SoftwareSpecs( "Postman", "dev",array('windows', 'mac', 'linux'), "i3", "4", "N/A", array("Size" => "512GB", "Type" => "SSD"), array("Resolution" => "1280x720", "Tech" => "N/A")),
+    new SoftwareSpecs( "Postman", "dev",array('windows', 'mac', 'linux'), "i3", "4", "Any", array("Size" => "512GB", "Type" => "SSD"), array("Resolution" => "1280x720", "Tech" => "Any")),
     
-    new SoftwareSpecs( "Swagger", "dev",array('windows', 'mac', 'linux'), "i5", "4", "N/A", array("Size" => "256GB", "Type" => "SSD"), array("Resolution" => "1280x720", "Tech" => "N/A")),
+    new SoftwareSpecs( "Swagger", "dev",array('windows', 'mac', 'linux'), "i5", "4", "Any", array("Size" => "256GB", "Type" => "SSD"), array("Resolution" => "1280x720", "Tech" => "Any")),
     
-    new SoftwareSpecs( "Notepad++", "dev",array('windows', 'linux'), "i3", "4", "N/A", array("Size" => "256GB", "Type" => "SSD"), array("Resolution" => "1280x720", "Tech" => "N/A")),
+    new SoftwareSpecs( "Notepad++", "dev",array('windows', 'linux'), "i3", "4", "Any", array("Size" => "256GB", "Type" => "SSD"), array("Resolution" => "1280x720", "Tech" => "Any")),
 
-    new SoftwareSpecs( "Atom", "dev",array('windows', 'mac', 'linux'), "i3", "4", "N/A", array("Size" => "256GB", "Type" => "SSD"), array("Resolution" => "1280x720", "Tech" => "N/A")),
+    new SoftwareSpecs( "Atom", "dev",array('windows', 'mac', 'linux'), "i3", "4", "Any", array("Size" => "256GB", "Type" => "SSD"), array("Resolution" => "1280x720", "Tech" => "Any")),
     
-    new SoftwareSpecs( "Sublime Text","dev", array('windows', 'mac', 'linux'), "i3", "4", "N/A", array("Size" => "256GB", "Type" => "SSD"), array("Resolution" => "N/A", "Tech" => "N/A")),
+    new SoftwareSpecs( "Sublime Text","dev", array('windows', 'mac', 'linux'), "i3", "4", "Any", array("Size" => "256GB", "Type" => "SSD"), array("Resolution" => "Any", "Tech" => "Any")),
     
-    new SoftwareSpecs( "Vim", "dev",array('windows', 'mac', 'linux'), "i3", "4", "N/A", array("Size" => "256GB", "Type" => "SSD"), array("Resolution" => "1920x1080", "Tech" => "N/A")),
+    new SoftwareSpecs( "Vim", "dev",array('windows', 'mac', 'linux'), "i3", "4", "Any", array("Size" => "256GB", "Type" => "SSD"), array("Resolution" => "1920x1080", "Tech" => "Any")),
     
-    new SoftwareSpecs( "WebStorm", "dev",array('windows', 'mac', 'linux'), "i5", "8", "N/A", array("Size" => "256GB", "Type" => "SSD"), array("Resolution" => "1920x1080", "Tech" => "N/A")),
+    new SoftwareSpecs( "WebStorm", "dev",array('windows', 'mac', 'linux'), "i5", "8", "Any", array("Size" => "256GB", "Type" => "SSD"), array("Resolution" => "1920x1080", "Tech" => "Any")),
     
-    new SoftwareSpecs( "Android Studio", "dev",array('windows', 'mac', 'linux'), "i5", "16", "4GB", array("Size" => "512GB", "Type" => "SSD"), array("Resolution" => "1920x1080", "Tech" => "N/A")),
+    new SoftwareSpecs( "Android Studio", "dev",array('windows', 'mac', 'linux'), "i5", "16", "4GB", array("Size" => "512GB", "Type" => "SSD"), array("Resolution" => "1920x1080", "Tech" => "Any")),
     
     new SoftwareSpecs( "AutoCAD", "engineer",array('windows', 'mac'), "i5", "16", "4GB", array("Size" => "512GB", "Type" => "SSD"), array("Resolution" => "1920x1080", "Tech" => "IPS")),
     
@@ -109,7 +109,7 @@ $softwareRecSpecs = array(
     
     new SoftwareSpecs( "Fusion 360","engineer", array('windows', 'mac'), "i5", "8", "4GB", array("Size" => "256GB", "Type" => "SSD"), array("Resolution" => "1920x1080", "Tech" => "IPS")),
     
-    new SoftwareSpecs( "Navisworks", "engineer",array('windows', 'mac'), "i5", "8", "N/A", array("Size" => "512GB", "Type" => "SSD"), array("Resolution" => "1920x1080", "Tech" => "IPS")),
+    new SoftwareSpecs( "Navisworks", "engineer",array('windows', 'mac'), "i5", "8", "Any", array("Size" => "512GB", "Type" => "SSD"), array("Resolution" => "1920x1080", "Tech" => "IPS")),
     
     new SoftwareSpecs( "3Ds MAX", "engineer",array('windows'), "i7", "8", "4GB", array("Size" => "512GB", "Type" => "SSD"), array("Resolution" => "1920x1080", "Tech" => "IPS")),
     
@@ -121,11 +121,11 @@ $softwareRecSpecs = array(
     
     new SoftwareSpecs( "SOLIDWORKS", "engineer",array('windows'), "i7", "16", "10GB", array("Size" => "512GB", "Type" => "SSD"), array("Resolution" => "1920x1080", "Tech" => "IPS")),
     
-    new SoftwareSpecs( "MATLAB","engineer", array('windows', 'mac', 'linux'), "i5", "16", "4GB", array("Size" => "512GB", "Type" => "N/A"), array("Resolution" => "1920x1080", "Tech" => "IPS")),
+    new SoftwareSpecs( "MATLAB","engineer", array('windows', 'mac', 'linux'), "i5", "16", "4GB", array("Size" => "512GB", "Type" => "Any"), array("Resolution" => "1920x1080", "Tech" => "IPS")),
     
     new SoftwareSpecs( "STAAD PRO", "engineer",array('windows'), "i5", "8", "4GB", array("Size" => "256GB", "Type" => "SSD"), array("Resolution" => "1920x1080", "Tech" => "IPS")),
     
-    new SoftwareSpecs( "Microsoft Project", "engineer",array('windows'), "i3", "4", "N/A", array("Size" => "256GB", "Type" => "SSD"), array("Resolution" => "1920x1080", "Tech" => "IPS")),
+    new SoftwareSpecs( "Microsoft Project", "engineer",array('windows'), "i3", "4", "Any", array("Size" => "256GB", "Type" => "SSD"), array("Resolution" => "1920x1080", "Tech" => "IPS")),
     
     new SoftwareSpecs( "MicroStation", "engineer",array('windows'), "i5", "16", "8GB", array("Size" => "1TB", "Type" => "SSD"), array("Resolution" => "1920x1080", "Tech" => "IPS")),
     

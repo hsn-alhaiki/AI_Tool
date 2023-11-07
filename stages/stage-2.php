@@ -16,10 +16,10 @@ $selectedOS = $_POST['OS'];
     <div class="dropdown dropdown-design">
 
         <button
-            class="dropdown-button btn btn-primary roanded-4 w-100 d-flex justify-content-between align-items-center fw-bold text-start p-1 py-2 p-sm-2 p-xl-3 px-3"
+            class="dropdown-button btn btn-primary rounded-4 w-100 d-flex justify-content-between align-items-center fw-bold text-start p-1 py-2 p-sm-2 p-xl-3 px-3"
             type="button" data-bs-toggle="collapse" data-bs-target="#design" aria-expanded="false"
             aria-controls="design">
-            design
+            Designing
             <img src="icons/arrow.svg" alt="" class="arrow-icon">
         </button>
 
@@ -50,7 +50,7 @@ $selectedOS = $_POST['OS'];
             class="dropdown-button btn btn-primary roanded-4 w-100 d-flex justify-content-between align-items-center fw-bold text-start p-1 py-2 p-sm-2 p-xl-3 px-3"
             type="button" data-bs-toggle="collapse" data-bs-target="#game" aria-expanded="false"
             aria-controls="game">
-            gaming
+            Gaming
             <img src="icons/arrow.svg" alt="" class="arrow-icon">
         </button>
 
@@ -146,7 +146,7 @@ $selectedOS = $_POST['OS'];
             class="dropdown-button btn btn-primary roanded-4 w-100 d-flex justify-content-between align-items-center fw-bold text-start p-1 py-2 p-sm-2 p-xl-3 px-3"
             type="button" data-bs-toggle="collapse" data-bs-target="#engineer" aria-expanded="false"
             aria-controls="engineer">
-            Engineer
+            Engineering
             <img src="icons/arrow.svg" alt="" class="arrow-icon">
         </button>
 

@@ -163,13 +163,7 @@ div.question {
 }
 
 /* Style the grid container for checkboxes */
-/* .grid-container {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  padding: 1vw;
-  grid-gap: 1rem;
-} */
+
 
 /* Style the checkboxes and labels as buttons */
 .hidden-checkbox {

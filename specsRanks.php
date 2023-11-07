@@ -6,7 +6,7 @@ $parts = array(
         'i7'=>['rank'=> 2],
         'i5'=>['rank'=> 3],
         'i3'=>['rank'=> 4],
-        'N/A'=>['rank'=> 5],
+        'Any'=>['rank'=> 5],
     ],
     'storage'=>[
         '2TB'=>['rank'=> 1],
@@ -24,7 +24,7 @@ $parts = array(
         '6GB'=>['rank'=> 6],
         '4GB'=>['rank'=> 7],
         '2GB'=>['rank'=> 8],
-        'N/A'=>['rank'=> 9],
+        'Any'=>['rank'=> 9],
     ],
     'Resolution'=>[
         '7680x4320'=>['rank'=> 1],
@@ -32,19 +32,19 @@ $parts = array(
         '2560x1440'=>['rank'=> 3],
         '1920x1080'=>['rank'=> 4],
         '1280x720' =>['rank'=> 5],
-        'N/A'      =>['rank'=> 6],
+        'Any'      =>['rank'=> 6],
     ],
     'Tech'=>[
         'OLED'=>['rank'=> 1],
         'IPS'=>['rank'=> 2],
         'VA'=>['rank'=> 3],
         'TN'=>['rank'=> 4],
-        'N/A'=>['rank'=> 5],
+        'Any'=>['rank'=> 5],
     ],
     'Type'=>[
         'Nvme'=>['rank'=> 1],
         'SSD'=>['rank'=> 2],
         'HDD'=>['rank'=> 3],
-        'N/A'=>['rank'=> 4],
+        'Any'=>['rank'=> 4],
     ]
     );
