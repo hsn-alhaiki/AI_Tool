@@ -79,9 +79,8 @@ function checkSpecs($sn)
         
         global $parts, $result_specs;
         if($answers[2][0] === 'heavy'){
-        //foreach($parts as $key => $part){
             foreach($parts['cpu'] as $key => $cpu){
-           if($cpu['rank'] === $parts['cpu'][$result_specs['cpu']]['rank']-1){
+                if($cpu['rank'] === $parts['cpu'][$result_specs['cpu']]['rank']-1){
                $result_specs['cpu'] = $key;
             }
         }
@@ -104,8 +103,7 @@ function checkSpecs($sn)
        }
     }
 }
-    //}
-
+    //} 
 // when render_html is is true then print the final results
     if($render_html){
 
