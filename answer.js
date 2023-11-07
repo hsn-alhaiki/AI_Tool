@@ -31,10 +31,10 @@ function updateSubmit() {
      fourthValues = Array.from(fourthQ).map(input => input.value);
 
     
-  console.log('First Question:', firstValues);
-  console.log('Second Question:', secondValues);
-  console.log('Third Question:', thirdValues);
-  console.log('Fourth Question:', fourthValues);
+//   console.log('First Question:', firstValues);
+//   console.log('Second Question:', secondValues);
+//   console.log('Third Question:', thirdValues);
+//   console.log('Fourth Question:', fourthValues);
 
   const firstValue = firstQ.length > 0;
   const secondValue = secondQ.length > 0;
@@ -77,7 +77,7 @@ submitButton.addEventListener('click',function (e){
     
 
     if (answers ===null) {
-        console.log('Error')
+        //console.log('Error')
     } else{
 
         submitAnswers(answers);
