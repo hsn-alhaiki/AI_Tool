@@ -3,17 +3,11 @@ include '/xampp/htdocs/AI_Tool/data/softwareSpecs.php';
 ?>
 
 <?php
-// session_start();
-
+// storing posted OS variable into $selectedOS variable and use it inside the 
+// if conditions to bring the software that are running on the selected Operating System
 $selectedOS = $_POST['OS'];
 ?>
-<script>
-//   function updateOS(){
-//     var selectedOS = document.querySelector('input[name="OS"]:checked').value;
-//     console.log(selectedOS);
-//     window.selectedOS = selectedOS;
-//   }
-</script>
+
 <div class="row-md-6 py-4">
     <div class="question fs-4 my-4 fw-semibold"> 4. What's Your PC's Mission? *</div>
 </div>

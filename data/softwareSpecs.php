@@ -21,7 +21,7 @@ $softwareRecSpecs = array(
     
     new SoftwareSpecs( "Character Animator", "design",array('windows', 'mac'), "i5", "8", "4GB", array("Size" => "512GB", "Type" => "SSD"), array("Resolution" => "1920x1080", "Tech" => "IPS")),
     
-    new SoftwareSpecs( "Audition", "design",array('windows', 'mac'), "i3", "16", "4GB", array("Size" => "256GB", "Type" => "SSD"), array("Resolution" => "1920x1080", "Tech" => "IPS")),
+    new SoftwareSpecs( "Audition", "design",array('windows', 'mac'), "i3", "8", "4GB", array("Size" => "256GB", "Type" => "SSD"), array("Resolution" => "1920x1080", "Tech" => "IPS")),
     
     new SoftwareSpecs( "Lightroom", "design",array('windows', 'mac'), "i5", "16", "4GB", array("Size" => "256GB", "Type" => "SSD"), array("Resolution" => "1920x1080", "Tech" => "IPS")),
     
@@ -61,7 +61,7 @@ $softwareRecSpecs = array(
     
     new SoftwareSpecs( "Eclipse","dev", array('windows', 'mac', 'linux'), "i5", "16", "N/A", array("Size" => "512GB", "Type" => "SSD"), array("Resolution" => "1280x720", "Tech" => "N/A")),
     
-    new SoftwareSpecs( "Arduino","dev", array('windows', 'mac', 'linux'), "N/A", "4", "N/A", array("Size" => "256GB", "Type" => "SSD"), array("Resolution" => "1280x720", "Tech" => "N/A")),
+    new SoftwareSpecs( "Arduino","dev", array('windows', 'mac', 'linux'), "i3", "4", "N/A", array("Size" => "256GB", "Type" => "SSD"), array("Resolution" => "1280x720", "Tech" => "N/A")),
     
     new SoftwareSpecs( "Xcode","dev", array('mac'), "N/A", "16", "N/A", array("Size" => "512GB", "Type" => "SSD"), array("Resolution" => "1920x1080", "Tech" => "N/A")),
     
@@ -135,5 +135,3 @@ $softwareRecSpecs = array(
     
     new SoftwareSpecs( "MathCAD", "engineer",array('windows', 'mac'), "i3", "2", "4GB", array("Size" => "512GB", "Type" => "SSD"), array("Resolution" => "1920x1080", "Tech" => "IPS"))
 );
-
-

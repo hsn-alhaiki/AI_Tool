@@ -1,16 +1,21 @@
 <?php
 include '/xampp/htdocs/AI_Tool/data/softwareSpecs.php';
 include '/xampp/htdocs/AI_Tool/specsRanks.php';
-// return  "r";
-// var_dump(($_POST));
+
+
+// render_html set to false until checking all selected software in answers array
 $render_html = false;
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['answers'])) {
-    $result_specs = [];
+
+            $result_specs = [];
             $recieved_answers = $_POST['answers'];
             $decodedAnswers = json_decode($recieved_answers, true);
-            // var_dump($decodedAnswers);
-
-           
+        // check if poted answers aren't empty then start the loop 
+        // first loop will go through all stored software inside our data file
+        // second loop will go through all stored software inside the posted answers
+        // then check the software name is matching the one in out software data file
+        // if its matching then call checkSpecs with passing software object 
+        // second condition is to check if the loop reached its end, if true then set render_html to true, and call checkWorkload
             if(!empty($decodedAnswers))
            {
             foreach ($softwareRecSpecs as $sft) {
@@ -31,6 +36,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['answers'])) {
 }
 
 
+/* 
+    checkSpecs function will store the first software specs to be as recommended specs to check later with the next software,
+    then check each passed software object if it has a better specs than the previous stored specs then store into $result_specs
+*/
 function checkSpecs($sn)
     {
         global $result_specs, $parts, $decodedAnswers;
@@ -63,6 +72,9 @@ function checkSpecs($sn)
             }
         }
     }
+
+    // checkWorkload will check if the user has selected a heavy worload then check the $result_specs,
+    // and provide better specs that are above one level of the previous specs.
     function checkWorkload($answers){
         
         global $parts, $result_specs;
@@ -94,8 +106,8 @@ function checkSpecs($sn)
 }
     //}
 
-
-    if($render_html === true){
+// when render_html is is true then print the final results
+    if($render_html){
 
         echo "<div class=\"result-head\">
         The Best Options for you is:
