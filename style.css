@@ -153,14 +153,14 @@ div.question {
 }
 
 /* Show the dropdown content when the dropdown button is hovered or focused */
-.dropdown:active .dropdown-content {
+/* .dropdown:active .dropdown-content {
   display: block;
-}
+} */
 
-.dropdown-button:active .arrow-icon {
+/* .dropdown-button:active .arrow-icon {
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
-}
+} */
 
 /* Style the grid container for checkboxes */
 
